@@ -1,0 +1,441 @@
+2026V534000300
+
+04/06/2000<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champaran Chicken House - Noida Sector 49 | Biryani ₹80 | 9199524463</title>
+    <meta name="description" content="Champaran Chicken House, Noida Sector 49, Hindon Vihar Gali No 12. Best Biryani ₹80, Chicken Tash ₹120. WhatsApp: 9199524463. Location & Order Now!">
+    <meta name="keywords" content="champaran chicken noida, sector 49 biryani, hindon vihar food, gali no 12 restaurant, 9199524463">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #ff6b35, #f7931e, #ffd23f);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .owner-info {
+            text-align: right;
+            font-size: 0.9rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23ff6b35" width="1200" height="600"/><circle fill="%23ffd23f" cx="200" cy="150" r="80"/><circle fill="%23f7931e" cx="800" cy="200" r="100"/><path fill="%23ff4757" d="M400 400 Q500 350 600 400 Q700 450 800 400"/></svg>');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        /* Location Section */
+        .location-section {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .location-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .location-address {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .location-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .map-btn {
+            background: linear-gradient(135deg, #4285F4, #34A853);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(66, 133, 244, 0.4);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .map-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(66, 133, 244, 0.6);
+        }
+
+        /* Menu Section */
+        .menu-section {
+            padding: 4rem 0;
+            background: #fffaf0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #ff6b35;
+            margin-bottom: 3rem;
+            font-weight: 600;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .menu-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff6b35, #f7931e, #ffd23f);
+        }
+
+        .menu-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.3);
+        }
+
+        .menu-icon {
+            font-size: 4rem;
+            color: #ff6b35;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite;
+        }
+
+        .menu-card h3 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .price-options {
+            margin: 1.5rem 0;
+        }
+
+        .price-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 1.5rem;
+            margin: 0.5rem 0;
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #ff4757;
+        }
+
+        .order-btn {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            width: 100%;
+            margin-top: 1rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .order-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        .contact-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.2);
+        }
+
+        .contact-item i {
+            font-size: 2rem;
+            color: #ffd23f;
+            width: 50px;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            border-radius: 50px;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            animation: whatsappBounce 2s infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounce {
+            0%,20%,50%,80%,100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        @keyframes whatsappBounce {
+            0%,20%,50%,80%,100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content { flex-direction: column; gap: 1rem; text-align: center; }
+            .logo h1 { font-size: 1.8rem; }
+            .location-buttons { flex-direction: column; align-items: center; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .whatsapp-float { width: 55px; height: 55px; bottom: 20px; right: 20px; font-size: 25px; }
+        }
+
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><i class="fas fa-utensils"></i> Champaran Chicken House</h1>
+                </div>
+                <div class="owner-info">
+                    <p>Owner: Shahnawaz Khan</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h2>🍗 Delicious Champaran Chicken! 🍗</h2>
+            <p>Noida Sector 49 | Fast Delivery | WhatsApp Orders</p>
+        </div>
+    </section>
+
+    <!-- LOCATION SECTION - NEW! -->
+    <section class="location-section">
+        <div class="container">
+            <div class="location-card">
+                <h2 style="font-size: 2rem; margin-bottom: 1rem;"><i class="fas fa-map-marker-alt"></i> Our Location</h2>
+                <div class="location-address">
+                    🏠 <strong>Noida Sector 49</strong><br>
+                    Hindon Vihar, Gali No 12<br>
+                    Near Sector 49 Metro Station
+                </div>
+                <div class="location-buttons">
+                    <a href="https://maps.app.goo.gl/your-custom-link-here" class="map-btn" target="_blank">
+                        <i class="fas fa-map-marked-alt"></i> Open Google Maps
+                    </a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Noida%20Sector%2049%2C%20Hindon%20Vihar%2C%20Gali%20No%2012" class="map-btn" target="_blank">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-grid">
+                <!-- Biryani -->
+                <div class="menu-card">
+                    <div class="menu-icon"><i class="fas fa-drumstick-bite"></i></div>
+                    <h3>Biryani</h3>
+                    <div class="price-options">
+                        <div class="price-option"><span>Half</span><span class="price">₹80</span></div>
+                        <div class="price-option"><span>Full</span><span class="price">₹120</span></div>
+                    </div>
+                    <a href="https://wa.me/9199524463?text=Hello%20Champaran%20Chicken%20House!%0ANoida%20Sec%2049%0AI%20want%20Biryani%20Half%20-%20₹80%0APlease%20confirm!" class="order-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Order Half (₹80)
+                    </a>
+                    <a href="https://wa.me/9199524463?text=Hello%20Champaran%20Chicken%20House!%0ANoida%20Sec%2049%0AI%20want%20Biryani%20Full%20-%20₹120%0APlease%20confirm!" class="order-btn" target="_blank" style="margin-top:0.5rem;">
+                        <i class="fab fa-whatsapp"></i> Order Full (₹120)
+                    </a>
+                </div>
+
+                <!-- Chicken Tash -->
+                <div class="menu-card">
+                    <div class="menu-icon"><i class="fas fa-fire"></i></div>
+                    <h3>Chicken Tash</h3>
+                    <div class="price-options">
+                        <div class="price-option"><span>Half</span><span class="price">₹80</span></div>
+                        <div class="price-option"><span>Full</span><span class="price">₹120</span></div>
+                    </div>
+                    <a href="https://wa.me/9199524463?text=Hello%20Champaran%20Chicken%20House!%0ANoida%20Sec%2049%0AI%20want%20Chicken%20Tash%20Half%20-%20₹80%0APlease%20confirm!" class="order-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Order Half (₹80)
+                    </a>
+                    <a href="https://wa.me/9199524463?text=Hello%20Champaran%20Chicken%20House!%0ANoida%20Sec%2049%0AI%20want%20Chicken%20Tash%20Full%20-%20₹120%0APlease%20confirm!" class="order-btn" target="_blank" style="margin-top:0.5rem;">
+                        <i class="fab fa-whatsapp"></i> Order Full (₹120)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 style="font-size:2.2rem;margin-bottom:1rem;">Quick Contact</h2>
+            <div class="contact-grid">
+                <a href="tel:+9199524463" class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>Call Now: 9199524463</span>
+                </a>
+                <a href="https://wa.me/9199524463?text=Hi%20from%20Noida%20Sec%2049!%20Order%20details?" class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp Chat</span>
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Noida%20Sector%2049%2C%20Hindon%20Vihar%2C%20Gali%20No%2012" class="contact-item">
+                    <i class="fas fa-map-mark
